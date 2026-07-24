@@ -91,10 +91,10 @@ For publication-grade grouped/ablation bars:
 ```python
 PUBLICATION_RCPARAMS = {
     "font.family": ["Arial", "Helvetica", "DejaVu Sans", "sans-serif"],
-    "font.size": 16,            # use 24 for large comparison bars
+    "font.size": 16,  # use 24 for large comparison bars
     "axes.spines.right": False,
     "axes.spines.top": False,
-    "axes.linewidth": 2.5,      # 3 for big bars, 2 for compact figures
+    "axes.linewidth": 2.5,  # 3 for big bars, 2 for compact figures
     "legend.frameon": False,
     "svg.fonttype": "none",
 }
