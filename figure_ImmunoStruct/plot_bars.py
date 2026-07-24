@@ -1,11 +1,12 @@
 import os
+
 import numpy as np
 from matplotlib import pyplot as plt
 from raw_data import (
-    data_comparison_IEDB,
+    data_ablation_Cancer,
     data_ablation_IEDB,
     data_comparison_Cancer,
-    data_ablation_Cancer,
+    data_comparison_IEDB,
 )
 
 

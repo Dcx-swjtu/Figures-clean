@@ -1,8 +1,8 @@
 import os
-import numpy as np
-from matplotlib import pyplot as plt
-import seaborn as sns
 
+import numpy as np
+import seaborn as sns
+from matplotlib import pyplot as plt
 
 DATA = {
     "clinical_stage": [
@@ -87,7 +87,6 @@ def plot_heatmap(fig_name: str):
 
     fig.tight_layout(pad=2)
     fig.savefig(fig_name, dpi=300)
-    return
 
 
 if __name__ == "__main__":

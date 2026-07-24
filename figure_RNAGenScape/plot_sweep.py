@@ -1,7 +1,7 @@
 import os
+
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
-
 
 # results_increase = {
 #     r'Median property change': [0.1125, 0.44046, 0.46006, 0.45625, 0.46510],
@@ -38,11 +38,11 @@ if __name__ == "__main__":
     fig = plt.figure(figsize=(4.5 * len(keys), 4))
     for fig_idx, y_key in enumerate(keys):
         ax = fig.add_subplot(1, len(keys), fig_idx + 1)
-        for key in results_increase.keys():
+        for key in results_increase:
             if y_key in key:
                 y_values_increase = results_increase[key]
                 y_label_increase = key
-        for key in results_decrease.keys():
+        for key in results_decrease:
             if y_key in key:
                 y_values_decrease = results_decrease[key]
                 y_label_decrease = key

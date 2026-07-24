@@ -15,19 +15,20 @@ Standard usage involves:
 from __future__ import annotations
 
 import logging
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Final, Sequence, TYPE_CHECKING
+from typing import TYPE_CHECKING, Any, Final
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 if TYPE_CHECKING:
+    import numpy.typing as npt
     from matplotlib.axes import Axes
     from matplotlib.container import BarContainer
     from matplotlib.figure import Figure
     from matplotlib.image import AxesImage
-    import numpy.typing as npt
 
 # Configure logger
 logger = logging.getLogger(__name__)

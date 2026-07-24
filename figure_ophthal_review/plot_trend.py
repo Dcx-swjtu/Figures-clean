@@ -1,9 +1,9 @@
 import os
-import numpy as np
-from matplotlib import pyplot as plt
 from datetime import datetime
-from dateutil.relativedelta import relativedelta
 
+import numpy as np
+from dateutil.relativedelta import relativedelta
+from matplotlib import pyplot as plt
 
 DATA = {
     "names": [
@@ -219,7 +219,6 @@ def mark_events(ax, time_arr, y_curve, events, dy=0.1):
                     mutation_scale=15,
                 ),
             )
-    return
 
 
 def plot_curve(fig_name: str):
@@ -307,7 +306,6 @@ def plot_curve(fig_name: str):
 
     fig.tight_layout(pad=2)
     fig.savefig(fig_name, dpi=300)
-    return
 
 
 if __name__ == "__main__":
